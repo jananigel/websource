@@ -1,0 +1,51 @@
+!!!
+%html
+	= render :partial => "home/head"
+	%body
+		.container-fluid
+			= render :partial => "home/header"
+			.content
+				.logo.row
+					.col-md-12
+						%img(src = "img/pic-01.png")
+				.item.row
+					.col-md-6
+						%img(src = "img/introduct-pic-01.png" width = "100%")
+					.col-md-6
+						.text-center
+							%img.title(src = "img/item-title-01.png")
+							.items-btn
+								.row
+									.col-md-6
+										%a(href = "#")
+											%img(src = "img/t-shirt-01.png")
+									.col-md-6
+										%a(href = "#")
+											%img(src = "img/picture-book-01.png")
+								.row
+									.col-md-6
+										%a(href = "#")
+											%img(src = "img/phone-case-01.png")
+									.col-md-6
+										%a(href = "#")
+											%img(src = "img/bag-01.png")
+				.line.row
+					.col-md-12
+						%img(src = "img/line-01.png" width = "100%")
+				.facebook.row
+					.col-md-12
+						%a(href = "https://www.facebook.com/cfkMonkey/" target = "_blank")
+							%img(src = "img/fb-01.png" width = "100%")
+							%img.fb-content(src = "img/fb-content-01.png" width = "100%" data-menu = "facebook")
+		.bottom-btn.text-center
+			%a.introduct-btn(href = "#" data-menu = "item")
+				%img(src = "img/introduct-bottom-btn-01.png" width = "10%")
+			%a.item-btn(href = "#" data-menu = "line")
+				%img(src = "img/item-bottom-btn-01.png" width = "10%")
+			%a.facebook-btn(href = "#" data-menu = "facebook")
+				%img(src = "img/facebook-bottom-btn-01.png" width = "10%")
+			%a.gotop-btn(href = "#" data-menu = "gotop")
+				%img(src = "img/gotop-bottom-btn-01.png" width = "10%")
+		= render :partial => "home/footer"
+
+= livereload_js if ENV["RACK_ENV"] != "production"

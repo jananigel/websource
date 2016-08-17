@@ -1,0 +1,33 @@
+.banner
+	width: 100%
+	text-align: center
+	white-space: nowrap
+	overflow: hidden
+	ul.img
+		width: 100%
+		list-style: none
+		padding: 0
+		position: relative
+		li
+			display: inline-block
+		img
+			width: 100%
+			margin: 0 0 5em 0
+
+.imgControl
+	position: absolute
+	z-index: 99
+	li
+		list-style: none
+	.control
+		width: .5em
+		height: .5em
+		border: 1px solid black
+		float: left
+		+border-radius(50px)
+		margin-right: 20px
+	.control.active
+		background-color: black
+
+
+

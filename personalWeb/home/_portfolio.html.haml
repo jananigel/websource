@@ -1,0 +1,70 @@
+.lightbox#lightboxWeb
+	.message
+		.title
+		.body
+			%img(src = "img/Web/01.jpg" width = "100%")
+		%hr
+		.messageFooter
+			-(1..30).each do |i|
+				- if i < 10
+					%img(src = "img/Web/0#{i}.jpg" width = "15%" height = "150px")
+				- else
+					%img(src = "img/Web/#{i}.jpg" width = "15%" height = "150px")
+	.close ×
+.lightbox#lightbox3D
+	.message
+		.title
+		.body
+			%img(src = "img/3d/0.png" width = "100%")
+		%hr
+		.messageFooter
+			-(0..10).each do |i|
+				%img(src = "img/3d/#{i}.png" width = "20%" height = "20%")
+	.close ×
+.lightbox#lightboxGra
+	.message
+		.title
+		.body
+			%img(src = "img/graphic/01.jpg" width = "100%")
+		%hr
+		.messageFooter
+			-(1..17).each do |i|
+				-if i < 10
+					%img(src = "img/graphic/0#{i}.jpg" width = "20%" height = "100px")
+				-else
+					%img(src = "img/graphic/#{i}.jpg" width = "20%" height = "100px")
+	.close ×
+.lightbox#lightboxApp
+	.message
+		.title
+		.body
+			%img(src = "img/App/01.png" width = "100%")
+		%hr
+		.messageFooter
+			-(1..12).each do |i|
+				- if i < 10
+					%img(src = "img/App/0#{i}.png" width = "15%" height = "150px")
+				- else
+					%img(src = "img/App/#{i}.png" width = "15%" height = "15%")
+	.close ×
+
+.lightbox#lightboxIll
+	.message
+		.title
+		.body
+			%img(src = "img/App/01.png" width = "100%")
+		%hr
+		.messageFooter
+			-(1..12).each do |i|
+				%img(src = "img/illustration/#{i}.jpg" width = "15%" height = "150px")
+	.close ×
+
+.lightbox#resume
+	.message
+		.title
+		.body
+			%img(src = "img/resume-04.png" width = "60%")
+		%hr
+		.messageFooter
+			/%img(src = "img/illustration/#{i}.jpg" width = "15%" height = "150px")
+	.close ×

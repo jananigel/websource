@@ -1,0 +1,17 @@
+@mixin iconStyle($bgColor , $width)
+	background: $bgColor
+	padding: .5em $width
+	+border-radius(50em)
+
+.footer
+	a
+		color: white
+		font-weight: bold
+	.fb-icon
+		+iconStyle(#3B5998 , .9em)
+	.tw-icon
+		+iconStyle(#41ABE1 , .9em)
+	.google-icon
+		+iconStyle(#92112A , .4em)
+	.mail-icon
+		+iconStyle(#009ce6 , .65em)
